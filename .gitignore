@@ -53,3 +53,6 @@ AssetStoreTools/
 
 # Local editor settings
 UserSettings/
+
+# Visual Studio 工作负载配置
+.vsconfig

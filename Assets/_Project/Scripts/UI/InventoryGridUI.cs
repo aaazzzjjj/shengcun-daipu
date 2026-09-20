@@ -63,7 +63,7 @@ namespace SurvivalPawnShop.UI
                     GameObject slotGO = Instantiate(config.slotPrefab, transform);
                     slotGO.name = $"Slot_{x}_{y}";
 
-                    Slot slot = slotGO.GetComponent<Slot>();
+                    InventorySlot slot = slotGO.GetComponent<InventorySlot>();
                     if (slot != null)
                     {
                         slot.Init(x, y);
