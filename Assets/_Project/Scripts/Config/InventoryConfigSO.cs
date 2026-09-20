@@ -2,8 +2,8 @@ using UnityEngine;
 
 namespace SurvivalPawnShop.Config
 {
-    [CreateAssetMenu(fileName = "NewInventoryConfig", menuName = "GameConfig/InventoryConfig")]
-    public class InventoryConfig : ScriptableObject
+    [CreateAssetMenu(fileName = "NewInventoryConfigSO", menuName = "GameConfig/InventoryConfigSO")]
+    public class InventoryConfigSO : ScriptableObject
     {
         [Header("网格尺寸")]
         public int columns = 24;

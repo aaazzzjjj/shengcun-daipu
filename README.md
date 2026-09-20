@@ -10,7 +10,7 @@ Unity 2D 生存经营模拟游戏：玩家经营一间**租来的档铺**，收�
 - **物品系统**：`ItemConfigSO` 静态档案（售价、品类、占格形状）+ `ItemInstance` 运行时数据
 - **核心基础设施**：`GameServices` 服务定位器 + `GameEvents` 事件中心
 - **网格工具**：`GridMath` 屏幕 ↔ 网格坐标换算
-- **网格 UI**：`InventoryGridUI` + `InventorySlot`，按 `InventoryConfig` 动态生成 24×10 格子
+- **网格 UI**：`InventoryGridUI` + `InventorySlot`，按 `InventoryConfigSO` 动态生成 24×10 格子
 - **空心边框 Shader**：`UIHollowBorder` + `HollowBorderMat` 材质
 
 ### 规划中
@@ -25,7 +25,7 @@ Unity 2D 生存经营模拟游戏：玩家经营一间**租来的档铺**，收�
 ```
 Assets/_Project/Scripts/
 ├── Core/       # GameServices 服务定位器、GameEvents 事件中心
-├── Config/     # InventoryConfig、ItemConfigSO 配置档案
+├── Config/     # InventoryConfigSO、ItemConfigSO 配置档案
 ├── Model/      # GridInventory、ItemInstance 数据模型
 ├── UI/         # InventoryGridUI、InventorySlot 网格表现
 └── Utils/      # GridMath 坐标换算
@@ -42,7 +42,7 @@ Assets/_Project/
 
 1. 打开 Unity 项目
 2. 打开 `Assets/_Project/Scenes/Test.unity` 场景
-3. 确认场景中的 `InventoryGridUI` 已挂载，并拖入 `InventoryConfig` 资产（`Assets/_Project/Config/InventoryConfig.asset`）
+3. 确认场景中的 `InventoryGridUI` 已挂载，并拖入 `InventoryConfigSO` 资产（`Assets/_Project/Config/InventoryConfigSO.asset`）
 4. 运行场景即可生成 24×10 格子
 
 ## 命名空间

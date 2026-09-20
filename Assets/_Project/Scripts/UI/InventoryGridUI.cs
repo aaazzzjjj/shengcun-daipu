@@ -9,7 +9,7 @@ namespace SurvivalPawnShop.UI
     public class InventoryGridUI : MonoBehaviour
     {
         [Header("配置文件引用")]
-        [SerializeField] private InventoryConfig config; // 这里拖入刚才创建的配置文件
+        [SerializeField] private InventoryConfigSO config; // 这里拖入刚才创建的配置文件
 
         private GridLayoutGroup gridLayout;
         private RectTransform rectTransform;
@@ -24,7 +24,7 @@ namespace SurvivalPawnShop.UI
         {
             if (config == null)
             {
-                Debug.LogError("InventoryConfig 未赋值！");
+                Debug.LogError("InventoryConfigSO 未赋值！");
                 return;
             }
             else
@@ -37,7 +37,7 @@ namespace SurvivalPawnShop.UI
         {
             if (config.slotPrefab == null)
             {
-                Debug.LogError("InventoryConfig 的 slotPrefab 未赋值！");
+                Debug.LogError("InventoryConfigSO 的 slotPrefab 未赋值！");
                 return;
             }
 
