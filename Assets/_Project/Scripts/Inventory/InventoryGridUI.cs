@@ -25,13 +25,19 @@ public class InventoryGridUI : MonoBehaviour
             Debug.LogError("InventoryConfig 未赋值！");
             return;
         }
-
-        GenerateGrid();
+        else
+        {
+            GenerateGrid();
+        }
     }
 
     public void GenerateGrid()
     {
-        if (config.slotPrefab == null) return;
+        if (config.slotPrefab == null)
+        {
+            Debug.LogError("InventoryConfig 的 slotPrefab 未赋值！");
+            return;
+        }
 
         // 1. 清理旧格子
         foreach (Transform child in transform)
